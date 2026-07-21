@@ -1,0 +1,3 @@
+[*.cs]
+# Ignore a specific compiler warning / analyzer rule (e.g., CA1822)
+dotnet_diagnostic.CA1822.severity = none

@@ -6,7 +6,10 @@ public class Solution
 {
     public bool CanPlaceFlowers(int[] flowerbed, int n)
     {
+        if (n == 0) return true;
         if (flowerbed.Length == 1 && flowerbed[0] == 1) return false;
+        if (flowerbed.Length == 1 && flowerbed[0] == 0) return true;
+        
         for (int i = 0; i < flowerbed.Length; i++)
         {
             var isTheFirstPot = i == 0;
